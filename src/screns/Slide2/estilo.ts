@@ -1,5 +1,5 @@
-import {StyleSheet} from "react-native"
-import { colors } from "../../estilos/estiloglobal"
+import { StyleSheet } from "react-native";
+import { colors } from "../../estilos/estiloglobal";
 
 export const styleEmoge = StyleSheet.create({
     container:{
@@ -8,7 +8,4 @@ export const styleEmoge = StyleSheet.create({
         flex: 1,
         backgroundColor: colors.vermelho
     }
-    
-        
-    
 })
