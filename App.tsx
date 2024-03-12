@@ -11,6 +11,7 @@ export default function App() {
     <Slide1 setPageI={setPage}/>
 
   );
+
 }
 
 

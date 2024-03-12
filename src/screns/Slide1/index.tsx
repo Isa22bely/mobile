@@ -9,9 +9,11 @@ export function Slide1({setPageI}: IPagina){
     const slide = require('../../assents/emog1.png')
     return(
         <View style={styleEmoge.container}>
+            <Image source={slide} />
+            <View style={styleEmoge.b}> 
             <BotaoSlide onPressI={() => setPageI(1)} />
             <BotaoSlide onPressI={() => setPageI(2)} />
-        <Image source={slide} />
+            </View>
         
         </View>
     )
