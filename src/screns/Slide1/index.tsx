@@ -11,8 +11,8 @@ export function Slide1({setPageI}: IPagina){
         <View style={styleEmoge.container}>
             <Image source={slide} />
             <View style={styleEmoge.b}> 
-            <BotaoSlide onPressI={() => setPageI(1)} />
-            <BotaoSlide onPressI={() => setPageI(2)} />
+            <BotaoSlide onPressI={() => setPageI(1)} cor = {true} />
+            <BotaoSlide onPressI={() => setPageI(2)} cor = {false}/>
             </View>
         
         </View>

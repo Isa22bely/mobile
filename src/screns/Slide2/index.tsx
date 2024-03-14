@@ -1,19 +1,21 @@
 import React from "react";
-import {styleEmoge} from "./estilo"
-import {BotaoSlide} from "../../componentes/BotaoSlide";
-import {IPagina} from "../../../App";
+import { styleEmoge } from "./estilo"
+import { Image, View } from "react-native";
+import { BotaoSlide } from "../../componentes/BotaoSlide";
+import { IPagina } from "../../../App";
 
-import {Image, View} from "react-native";
 
-export function Slide2({setPageI}: IPagina){
+
+export function Slide2({ setPageI }: IPagina) {
     const slide = require('../../assents/emog2.png')
-    return(
+    return (
         <View style={styleEmoge.container}>
-        <Image source={slide}/>
-        <BotaoSlide onPressI={() => setPageI(1)}/>
-        <BotaoSlide onPressI={() => setPageI(2)}/>
+            <Image source={slide} />
+            <View style={styleEmoge.b}>
+            <BotaoSlide onPressI={() => setPageI(1)} cor={false} />
+            <BotaoSlide onPressI={() => setPageI(2)} cor={true} />
+            </View>
 
-        
         </View>
     )
 }

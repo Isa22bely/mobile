@@ -7,5 +7,8 @@ export const styleEmoge = StyleSheet.create({
         justifyContent: "center",
         flex: 1,
         backgroundColor: colors.vermelho
+    },
+    b:{
+        flexDirection: "row"
     }
 })
